@@ -11,7 +11,6 @@ const rps = ["rock", "paper", "scissors"];
 rock.addEventListener('click', () => {
     let rand = Math.floor(Math.random() * 3);
 
-
     let enemy = rps[rand]
     console.log(enemy);
     if(enemy == "rock") {
@@ -25,3 +24,34 @@ rock.addEventListener('click', () => {
     }
 });
 
+paper.addEventListener('click', () => {
+    let rand = Math.floor(Math.random() * 3);
+
+    let enemy = rps[rand]
+    console.log(enemy);
+    if(enemy == "rock") {
+        result.value = "Congrats, you won!"
+    } else if(enemy == "paper") {
+        result.value = "Tie"
+    } else if(enemy == "scissors") {
+        result.value = "You lost!"
+    } else {
+        result.value = "Error"
+    }
+});
+
+scissors.addEventListener('click', () => {
+    let rand = Math.floor(Math.random() * 3);
+
+    let enemy = rps[rand]
+    console.log(enemy);
+    if(enemy == "rock") {
+        result.value = "You lost!"
+    } else if(enemy == "paper") {
+        result.value = "Congrats, you won!"
+    } else if(enemy == "scissors") {
+        result.value = "Tie"
+    } else {
+        result.value = "Error"
+    }
+});
