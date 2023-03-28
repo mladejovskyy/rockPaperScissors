@@ -14,11 +14,11 @@ rock.addEventListener('click', () => {
     let enemy = rps[rand]
     console.log(enemy);
     if(enemy == "rock") {
-        result.value = "Tie"
+        result.value = "Rock x Rock, Tie"
     } else if(enemy == "paper") {
-        result.value = "You lost"
+        result.value = "Rock x Paper, You lost!"
     } else if(enemy == "scissors") {
-        result.value = "Congrats, you won!"
+        result.value = "Rock x Scissors, Congrats, you won!"
     } else {
         result.value = "Error"
     }
@@ -30,11 +30,11 @@ paper.addEventListener('click', () => {
     let enemy = rps[rand]
     console.log(enemy);
     if(enemy == "rock") {
-        result.value = "Congrats, you won!"
+        result.value = "Paper x rock, congrats, you won!"
     } else if(enemy == "paper") {
-        result.value = "Tie"
+        result.value = "Paper x Paper, Tie"
     } else if(enemy == "scissors") {
-        result.value = "You lost!"
+        result.value = "Paper x Scissors, You lost!"
     } else {
         result.value = "Error"
     }
@@ -46,11 +46,11 @@ scissors.addEventListener('click', () => {
     let enemy = rps[rand]
     console.log(enemy);
     if(enemy == "rock") {
-        result.value = "You lost!"
+        result.value = "Scissors x Rock, You lost!"
     } else if(enemy == "paper") {
-        result.value = "Congrats, you won!"
+        result.value = "Scissors x Paper, Congrats, you won!"
     } else if(enemy == "scissors") {
-        result.value = "Tie"
+        result.value = "Scissors x Scissors, Tie"
     } else {
         result.value = "Error"
     }
